@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './search.css';
 
 const Search = (props) =>{
+    const post = props.data.items;
     const [searchTerm,setSearchTerm] = useState("");
-    const [post,setPost] = useState(props.data.items);
+   
     const [incr,setIncr] = useState(0);
     const [sort,setSort] = useState({
         value:props.data.items
@@ -40,19 +41,11 @@ const Search = (props) =>{
 <thead>
 <tr>
 <th>images</th>
-<th>
-<select onChange={titleHandler}>
-<option value="desc">Title(Z - A)</option>
-<option value="asc">Title(A - Z)</option>
-</select>
-
+<th onClick={titleHandler}>
+title
 </th>
-<th>
-<select  onClick={sortHandler} >
-  <option>Date(incresing order)</option>
-  <option >2</option>
-  <option>3</option>
-  </select>
+<th onClick={sortHandler}>
+Date
 </th>
 <th>description</th>
 </tr>

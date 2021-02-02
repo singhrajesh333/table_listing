@@ -57,7 +57,9 @@ body{
         color: #009879;
     }
 
-    
+    th{
+        cursor: pointer;
+    }
 
 /* input {
     margin-top: 20px;
@@ -79,10 +81,10 @@ body{
 input{
     margin-top: 1.5rem;
     border: 0.2rem solid #f0f0f0;
-      border-radius: 10px;
+      border-radius: 0.5rem;
       display: block;
       width:20%;
-      padding: 0.1rem;
+      padding: 0.2rem;
       font-size: 1.4rem;
   }
     
